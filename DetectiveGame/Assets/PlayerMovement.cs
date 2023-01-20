@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        motion = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        motion = new Vector2(Input.GetAxisRaw("Horizontal"),0);
         transform.Translate(motion * speed * Time.deltaTime);
     }
 }
