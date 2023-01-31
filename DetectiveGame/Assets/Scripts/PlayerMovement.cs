@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        motion = new Vector2(Input.GetAxisRaw("Horizontal"),0);
+        motion = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
         transform.Translate(motion * speed * Time.deltaTime);
 
         direction = Input.GetAxisRaw("Horizontal");
@@ -32,5 +32,6 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
         // takes negative float and makes it positive
+
     }
 }
