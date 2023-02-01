@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TavernInterior.unity
     guid: 8968afdacc74ff14b8d4eaab89df9e7b
+  - enabled: 1
+    path: Assets/Scenes/house-aInterior.unity
+    guid: 86255f19bc2686140a091dee55c66be5
+  - enabled: 1
+    path: Assets/Scenes/house-bInterior.unity
+    guid: 817192c417aa2c346898455de8e64db8
   m_configObjects: {}
