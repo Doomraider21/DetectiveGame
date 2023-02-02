@@ -19,10 +19,21 @@ public class colliderTrigger : MonoBehaviour
         }
     }
 
+    [SerializeField] private Transform player; //drag player reference onto here
+    private Vector3 targetPosition; //here you store the position you want to teleport your player to
 
+    private void SceneLoaded()
+    {
+        if (buildIndex == 0) //use your desired check here to compare your scene
+        {
+            player.position = targetPosition;
+        }
+    }
 
     void Update()
     {
         triggerInteract();
+        SceneLoaded();
     }
+
 }
